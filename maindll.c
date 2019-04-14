@@ -169,7 +169,7 @@ static void GUI_Interact(void)
 {
 	if(!welcomed) // if not welcomed before
 	{
-		if(K_CTRL1) // accept welcome message (CTRL+0)
+		if(K_CTRL1) // accept welcome message (CTRL+1)
 		{
 			welcomed = 1;
 			GUI_Update();
