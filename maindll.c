@@ -150,6 +150,7 @@ static void GUI_Quit(void)
 //==========================================================================
 static void GUI_Welcome(void)
 {
+	GUI_Clear();
 	printf("\n    Mouse Injector for %s %s\n%s\n\n   Addendum - Please Read before Use\n\n\n", PCSX2VERSION, BUILDINFO, LINE);
 	printf("    1)  This is a unfinished test, expect issues and crashes\n\n");
 	printf("    2)  Made for PCSX2 1.5.0, newer versions may not work with plugin\n\n");
