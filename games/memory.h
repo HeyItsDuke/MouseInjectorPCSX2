@@ -55,7 +55,7 @@ static inline int32_t MEM_ReadInt(const uint32_t addr)
 // Purpose: write int to memory location
 // Parameter: address, value
 //==========================================================================
-static inline void MEM_WriteInt(const uint32_t addr, const int value)
+static inline void MEM_WriteInt(const uint32_t addr, const int32_t value)
 {
 	if(WITHINRANGE(addr))
 		MEMINT(addr) = value;
