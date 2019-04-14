@@ -58,7 +58,7 @@ static const uint32_t invalidptrs[7] = {0x00000000, 0x00C7F6C0, 0x01DD5E10, 0x01
 //==========================================================================
 static uint8_t TS1_Status(void)
 {
-	return ((uint32_t)MEM_ReadInt(TS1_gameid) == 0x53554C53U);
+	return (MEM_ReadUInt(TS1_gameid) == 0x53554C53U);
 }
 //==========================================================================
 // Purpose: detects player pointer
@@ -66,8 +66,8 @@ static uint8_t TS1_Status(void)
 //==========================================================================
 static void TS1_DetectMap(void)
 {
-	const uint32_t tempptr = (uint32_t)MEM_ReadInt(TS1_playerdata);
-	for(int index = 0; index < 7; index++)
+	const uint32_t tempptr = MEM_ReadUInt(TS1_playerdata);
+	for(uint8_t index = 0; index < 7; index++)
 	{
 		if(tempptr == invalidptrs[index]) // if player pointer is invalid (menu, credits, map maker)
 		{
@@ -76,7 +76,7 @@ static void TS1_DetectMap(void)
 		}
 	}
 	const float camy = MEM_ReadFloat(tempptr + TS1_camy);
-	const uint32_t fov = MEM_ReadInt(tempptr + TS1_fov);
+	const uint32_t fov = MEM_ReadUInt(tempptr + TS1_fov);
 	if(playerbase != tempptr && camy >= -50 && camy <= 50 && fov == 0x42700000U)
 		playerbase = tempptr;
 }
@@ -90,9 +90,9 @@ static void TS1_Inject(void)
 	TS1_DetectMap();
 	if(!playerbase) // if playerbase is invalid
 		return;
-	const int pause = MEM_ReadInt(TS1_pause);
-	const int menu = MEM_ReadInt(TS1_menu);
-	const int aimingflag = MEM_ReadInt(playerbase + TS1_aimingflag);
+	const int32_t pause = MEM_ReadInt(TS1_pause);
+	const int32_t menu = MEM_ReadInt(TS1_menu);
+	const int32_t aimingflag = MEM_ReadInt(playerbase + TS1_aimingflag);
 	const float fov = MEM_ReadFloat(playerbase + TS1_fov);
 	const float looksensitivity = (float)sensitivity / 40.0f;
 	const float crosshairsensitivity = ((float)crosshair / 80.f) * looksensitivity;

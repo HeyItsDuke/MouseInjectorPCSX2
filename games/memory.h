@@ -20,11 +20,13 @@
 #define PCSX2MEMOFFSET 0x20000000
 #define MEMSHORT(X) *(int16_t *)(X + PCSX2MEMOFFSET)
 #define MEMINT(X) *(int32_t *)(X + PCSX2MEMOFFSET)
+#define MEMUINT(X) *(uint32_t *)(X + PCSX2MEMOFFSET)
 #define MEMFLOAT(X) *(float *)(X + PCSX2MEMOFFSET)
 
 #define WITHINRANGE(X) (X < 0x02000000U)
 #define GARBAGESHORT (int16_t)0xABAD
 #define GARBAGEINT (int32_t)0xABADC0DE
+#define GARBAGEUINT (uint32_t)0xABADC0DE
 
 //==========================================================================
 // Purpose: read short from memory
@@ -59,6 +61,23 @@ static inline void MEM_WriteInt(const uint32_t addr, const int32_t value)
 {
 	if(WITHINRANGE(addr))
 		MEMINT(addr) = value;
+}
+//==========================================================================
+// Purpose: read unsigned int from memory
+// Parameter: address
+//==========================================================================
+static inline uint32_t MEM_ReadUInt(const uint32_t addr)
+{
+	return WITHINRANGE(addr) ? MEMUINT(addr) : GARBAGEUINT;
+}
+//==========================================================================
+// Purpose: write unsigned int to memory location
+// Parameter: address, value
+//==========================================================================
+static inline void MEM_WriteUInt(const uint32_t addr, const uint32_t value)
+{
+	if(WITHINRANGE(addr))
+		MEMUINT(addr) = value;
 }
 //==========================================================================
 // Purpose: read float from memory
