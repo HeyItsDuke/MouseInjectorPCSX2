@@ -1,7 +1,7 @@
 //==========================================================================
 // Mouse Injector for PCSX2
 //==========================================================================
-// Copyright (C) 2019 Carnivorous
+// Copyright (C) 2020 Carnivorous
 // All rights reserved.
 //
 // Mouse Injector is free software; you can redistribute it and/or modify it
@@ -154,7 +154,7 @@ static void GUI_Welcome(void)
 	printf("\n    Mouse Injector for %s %s\n%s\n\n   Addendum - Please Read before Use\n\n\n", PCSX2VERSION, BUILDINFO, LINE);
 	printf("    1)  This is a unfinished test, expect issues and crashes\n\n");
 	printf("    2)  Made for PCSX2 1.5.0, newer versions may not work with plugin\n\n");
-	printf("    3)  Made for the NTSC release of TimeSplitters 1: SLUS-20090 CRC: B4A004F2\n\n");
+	printf("    3)  Only supports TimeSplitters (SLUS-20090) and Black (SLUS-21376)\n\n");
 	printf("    4)  You must use Windows Messaging for mouse input or injection won't work\n\n");
 	printf("    5)  Dynamic controller remapping is unsupported - use arrow keys for menu\n\n");
 	printf("    6)  Split-screen multiplayer and MapMaker are unsupported\n\n");

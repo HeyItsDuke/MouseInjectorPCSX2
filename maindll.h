@@ -1,7 +1,7 @@
 //==========================================================================
 // Mouse Injector for PCSX2
 //==========================================================================
-// Copyright (C) 2019 Carnivorous
+// Copyright (C) 2020 Carnivorous
 // All rights reserved.
 //
 // Mouse Injector is free software; you can redistribute it and/or modify it
@@ -17,7 +17,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program; if not, visit http://www.gnu.org/licenses/gpl-2.0.html
 //==========================================================================
-#define PCSX2VERSION "PCSX2 v1.5.0-2867"
+#define PCSX2VERSION "PCSX2 v1.5.0-3362"
 #define BUILDINFO "(v0.1 - "__DATE__")"
 #define LINE "_______________________________________________________________"
 #define TICKRATE 1 // run mouse injector at 1000 Hz
