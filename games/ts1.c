@@ -104,9 +104,9 @@ static void TS1_Inject(void)
 	{
 		camx -= (float)xmouse / 10.f * looksensitivity * (fov / 60.f);
 		camy -= (float)(!invertpitch ? ymouse : -ymouse) / 10.f * looksensitivity * (fov / 60.f);
-		if(camx < 0)
+		while(camx < 0)
 			camx += 360;
-		else if(camx >= 360)
+		while(camx >= 360)
 			camx -= 360;
 		MEM_WriteFloat(playerbase + TS1_camx, camx);
 		MEM_WriteFloat(playerbase + TS1_camy, ClampFloat(camy, -50, 50));
