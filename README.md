@@ -1,4 +1,4 @@
-# Mouse Injector for PCSX2 v1.5.0-2867
+# Mouse Injector for PCSX2 v1.5.0-3362
 
 * [pcsx2-1.5.0-timesplitters-mouse.7z](https://github.com/carnivoroussociety/MouseInjectorPCSX2/releases/download/v0.1/pcsx2-1.5.0-timesplitters-mouse.7z)
 
