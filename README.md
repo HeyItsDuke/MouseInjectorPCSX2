@@ -1,7 +1,5 @@
 # Mouse Injector for PCSX2 v1.5.0-3362
 
-* [pcsx2-1.5.0-timesplitters-mouse.7z](https://github.com/carnivoroussociety/MouseInjectorPCSX2/releases/download/v0.1/pcsx2-1.5.0-timesplitters-mouse.7z)
-
 A DLL proxy for LilyPad that injects cursor input into game memory, bundled with PCSX2 emulator.
 
 ## Please Note
