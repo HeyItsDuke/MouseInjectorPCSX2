@@ -1,4 +1,4 @@
-# Mouse Injector for PCSX2 v1.5.0-3362
+# Mouse Injector for PCSX2 v1.5.0
 
 A DLL proxy for LilyPad that injects cursor input into game memory, bundled with PCSX2 emulator.
 
