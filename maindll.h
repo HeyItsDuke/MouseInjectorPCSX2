@@ -17,8 +17,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program; if not, visit http://www.gnu.org/licenses/gpl-2.0.html
 //==========================================================================
-#define PCSX2VERSION "PCSX2 v1.5.0-3362"
-#define BUILDINFO "(v0.1 - "__DATE__")"
+#define PCSX2VERSION "PCSX2 v1.7.0"
+#define BUILDINFO "(v0.11 - "__DATE__")"
 #define LINE "_______________________________________________________________"
 #define TICKRATE 1 // run mouse injector at 1000 Hz
 // input for interface

@@ -21,8 +21,8 @@
 
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US // Version Information resources
 1 VERSIONINFO
-    FILEVERSION     0,1,0,0
-    PRODUCTVERSION  0,1,0,0
+    FILEVERSION     0,1,1,0
+    PRODUCTVERSION  0,1,1,0
     FILEOS          VOS_NT_WINDOWS32
     FILETYPE        VFT_DLL
     FILESUBTYPE     VFT2_UNKNOWN
@@ -34,12 +34,12 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US // Version Information resources
         BLOCK "040904B0"
         {
             VALUE "FileDescription", "Mouse Injector for PCSX2"
-            VALUE "FileVersion", "0, 1, 0, 0"
+            VALUE "FileVersion", "0, 1, 1, 0"
             VALUE "InternalName", "Mouse Injector"
             VALUE "LegalCopyright", "Copyright (C) 2020 Carnivorous"
             VALUE "OriginalFilename", "Mouse-Injector.dll"
             VALUE "ProductName", "Mouse Injector for PCSX2"
-            VALUE "ProductVersion", "0, 1, 0, 0"
+            VALUE "ProductVersion", "0, 1, 1, 0"
         }
     }
     BLOCK "VarFileInfo"

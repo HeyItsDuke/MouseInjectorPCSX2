@@ -17,7 +17,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program; if not, visit http://www.gnu.org/licenses/gpl-2.0.html
 //==========================================================================
-#define PCSX2MEMOFFSET 0x20000000
+#define PCSX2MEMOFFSET 0x40000000
 #define MEMSHORT(X) *(int16_t *)(X + PCSX2MEMOFFSET)
 #define MEMINT(X) *(int32_t *)(X + PCSX2MEMOFFSET)
 #define MEMUINT(X) *(uint32_t *)(X + PCSX2MEMOFFSET)
