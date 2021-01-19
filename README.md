@@ -1,4 +1,4 @@
-#Note by HeyItsDuke
+# Note by HeyItsDuke
 This is an unaltered fork of the PCSX2 mouse injector by carnivoroussociety. I only have this here for preservation just in case anything happens to the original repository. Feel free to fork this if that happens.
 
 The original readme is below.
